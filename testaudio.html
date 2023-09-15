@@ -1,0 +1,24 @@
+<html>
+ <body>
+
+    <a onclick="gotoplay(54)">this is dog</a>
+   <audio src="aa.mp3" id="myAudio"></audio>
+   <button onClick="playMyAudio()">Play Audio</button>
+   <button onClick="pause()">Pause Audio</button>
+   <script>
+     function playMyAudio(){
+       document.getElementById("myAudio").play();
+     }
+     function pause(){
+        document.getElementById("myAudio").pause();
+     }
+     function gotoplay(time){
+
+       
+        var aa =  document.getElementById("myAudio");
+        aa.currentTime = time; 
+        aa.play();
+     }
+   </script>
+ </body>
+</html>

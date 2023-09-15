@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio URLs with onclick</title>
+</head>
+<body>
+
+<ul>
+{% for audio in audiojsontext %}
+  <li><a href="javascript:void(0);" onclick="gotoaudio({{ audio.start }});">{{ audio.text }}</a></li>
+{% endfor %}
+</ul>
+
+<script>
+  function gotoaudio(start) {
+    alert("Go to audio at " + start + " seconds");
+    // Replace this with your actual audio playback code
+  }
+</script>
+
+</body>
+</html>
